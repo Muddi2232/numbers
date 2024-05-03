@@ -6,22 +6,25 @@
     <title>Document</title>
 </head>
 <body>
-
-    <h1>Numbers Methods</h1>
-
-    <!-- <input placeholder="Add Number" id="round-input">
-    <button onclick="round()">Round It</button>
-    <h2 style="display: inline-block;" id="round-result"></h2> -->
-
-     <!-- <input placeholder="Add Number" id="round-input">
-    <button onclick="floor()">Floor It</button>
-    <h2 style="display: inline-block;" id="round-result"></h2>  -->
-
-    <div> <h2 id="random_result"></h2>
-        <button onclick="generateRandomNumber()">Generate Random Number</button>
+     <h1 style="text-align: center;">Stop Watch</h1>
+     <div style="display: flex; justify-content: center; margin-top: 50px;">
+      <h1 id="min">0</h1><span>Minutes</span>
+      <h1>:</h1>
+      <h1 id="sec">0</h1> <span>Seconds</span>
+      <h1>:</h1>
+      <h1 id="ms">00</h1><span>Mili Seconds</span>  
+    
     </div>
 
+    <div style="display: flex; justify-content: center;">
+        <button id="start_btn" onclick="start()">Start</button>
+        <button onclick="stop()">Stop</button>
+        <button onclick="reset()">Reset</button>
 
+
+
+    </div>
+    
     <script src="app.js"></script>
 </body>
 </html>
